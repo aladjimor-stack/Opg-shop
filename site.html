@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+            h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        .product-card p {
+            color: #777;
+            font-weight: bold;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366; /* Couleur de WhatsApp */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">OPG'Bag</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.cleanipedia.com/images/yvwvo5xgjuhg/f90405b6af5850e40b009593676c0851/214a1c6a8bfb749ac447212325b69f52/aHR0cHNfX193d3cuY2xlYW5pcGVkaWEuY29tX2NvbnRlbnRfZGFtX3VuaWxldmVyX2NsZWFuaXBlZGlhX2dsb2JhbF9nZW5lcmFsX2ltYWdlX3NodXR0ZXJzdG9ja180NDg4NTgwODctMTQ2ODAyOS1qcGcuanBn/600w/a-woman-with-a-red-handbag.jpg" class="d-block w-100" alt="Image 1">
+          <div class="carousel-caption">
+            <h5>Choisis celle qui vous plait</h5>
+            <p>Beaucoup de model disponibles.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://th.bing.com/th/id/R.6a0d735db02508f603603f634fd16a9e?rik=lO7IKULcA%2fnQDQ&riu=http%3a%2f%2fwww.pursebop.com%2fwp-content%2fuploads%2f2015%2f11%2fgivenchy_antigona_bag.png&ehk=A8I6W1cbjqHOI30Jh4RalMHkYf2ogcDk6unRTVy3AvE%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="Image 2">
+          <div class="carousel-caption">
+            <h5></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.axes-net.com/abox/wp-content/uploads/2023/05/AdobeStock_119426880_R.jpeg" class="d-block w-100" alt="Image 3">
+          <div class="carousel-caption">
+            <h5></h5>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+<main>
+        <h1>Nos produits</h1>
+        <section class="products-container" id="products-container">
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Shop. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Numéro de téléphone du vendeur (inclure l'indicatif du pays)
+        const phoneNumber = "+221778142710";
+
+        // Données des produits avec des images de produits réels
+        const products = [
+            { id: 1, name: "T-shirt", price: 25.00, image: "https://5.imimg.com/data5/SELLER/Default/2022/12/XV/IO/VC/6384211/1-500x500.jpg" },
+            { id: 2, name: "Jean", price: 50.00, image: "https://5.imimg.com/data5/SELLER/Default/2022/12/XV/IO/VC/6384211/1-500x500.jpg"},
+            { id: 3, name: "Baskets", price: 80.00, image: "https://5.imimg.com/data5/SELLER/Default/2022/12/XV/IO/VC/6384211/1-500x500.jpg" },
+
+        ];
+
+        const productsContainer = document.getElementById('products-container');
+
+        // Fonction pour afficher les produits
+        function displayProducts() {
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+
+                // Création du message et du lien WhatsApp
+                const whatsappMessage = `Bonjour, je suis intéressé(e) par le produit "${product.name}" au prix de $${product.price.toFixed(2)}. Voici un lien pour voir l'image : ${product.image}`;
+                const encodedMessage = encodeURIComponent(whatsappMessage);
+                const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+                productCard.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>$${product.price.toFixed(2)}</p>
+                    <a href="${whatsappLink}" target="_blank" class="whatsapp-button">Commander sur WhatsApp</a>
+                `;
+
+                productsContainer.appendChild(productCard);
+            });
+        }
+
+        // Afficher les produits au chargement de la page
+        displayProducts();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
