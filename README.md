@@ -1,2 +1,2 @@
-# site3.html
+# opg-shop
 Mon premier projet
